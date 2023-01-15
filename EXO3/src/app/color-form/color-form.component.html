@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="title"> Couleur Favoris 😊 </div>
+  <div class="cardform">
+    <form [formGroup]="builderColorForm">
+      <div class="cardinput">
+        <input formControlName="favoriteColor" name="favoriteColor"  type="text" placeholder="couleur favoris ...">
+      </div>
+      <div class="cardbtn">
+        <button (click)="submitColor()">Envoyer</button>
+      </div>
+    </form>
+    <div *ngIf="favoriteColor!=''">
+      Votre coleur préferé est {{ favoriteColor }}
+    </div>
+  </div>
+</div>
