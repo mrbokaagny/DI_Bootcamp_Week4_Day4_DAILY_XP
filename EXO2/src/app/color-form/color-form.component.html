@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="title"> Couleur Favoris 😊 </div>
+  <div class="cardform">
+    <form #f="ngForm" (ngSubmit)="submitColor(f)">
+      <div class="cardinput">
+        <input name="favoriteColor" ngModel #favoriteColor="ngModel" type="text" placeholder="couleur favoris ...">
+      </div>
+      <div class="cardbtn">
+        <button>Envoyer</button>
+      </div>
+    </form>
+    <div>
+      Votre coleur préferé est {{ displayColor }}
+    </div>
+  </div>
+</div>
