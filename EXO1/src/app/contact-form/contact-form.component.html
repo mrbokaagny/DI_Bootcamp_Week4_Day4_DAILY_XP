@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="title"> Formulaire de contact </div>
+  <div class="cardform">
+    <form>
+      <div class="cardinput">
+        <input [(ngModel)]="formContact.name" name="formContact.name" type="text" placeholder="votre nom ...">
+      </div>
+      <div class="cardinput">
+        <input [(ngModel)]="formContact.email" name="formContact.email"  type="email" placeholder="votre addresse mail ...">
+      </div>
+      <div class="cardinput">
+        <textarea [(ngModel)]="formContact.message" name="formContact.message
+        message"  placeholder="votre message ..."></textarea>
+      </div>
+    </form>
+    <div class="cardbtn">
+      <button (click)="submitForm()">Envoyer</button>
+    </div>
+  </div>
+</div>
